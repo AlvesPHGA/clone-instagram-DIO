@@ -3,12 +3,15 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .grid-smartphone{
     display: none;
 }
 
-.grid-area-login-down{ border: 1px solid red;
-    width: 90vw;
+.grid-area-login-down{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -17,16 +20,16 @@
     text-align: center;
 }
 
-.grid-area-login{ border: 1px solid green;
+.grid-area-login{
     width: 100%;
     padding: 30px 0;
 }
 
-.grid-area-login img{ border: 1px blue solid;
+.grid-area-login img{ 
     width: 60%;
 }
 
-.grid-area-form form{border: 1px solid blue;
+.grid-area-form form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,4 +53,108 @@
     border-radius: 5px;
     color: #fff;
     font-weight: bold;
+}
+
+.grid-area-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    margin-top: 10px;
+}
+
+.grid-area-link a{
+    color: #fff;
+}
+
+.facebook-link{
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #0095F6;
+    width: 257px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.forgot-pass{
+    font-size: .8rem;
+    margin-left: 150px;
+}
+
+.grid-area-create-account{
+    margin: 10px 0;
+}
+
+.grid-area-create-account p{
+    padding: 5px;
+}
+
+.grid-area-create-account a{
+    color: #0095f6;
+    font-weight: bold;
+}
+
+.grid-area-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px auto 20px;
+}
+
+.grid-area-button a img{
+    width: 125px;
+    height: 40px;
+    margin-top: 25px;
+}
+
+.grid-link-footer{
+    width: 90vw;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    font-size: .8rem;
+    padding: 5px;
+}
+
+.grid-link-footer a{
+    margin: 3px;
+    display: inline-flex;
+    color: #8e8e8e;
+}
+
+.trace-word{ 
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+.text-alone{
+    margin-top: 10px;
+    color: #8e8e8e;
+}
+
+.trace{  
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #dbdbdb;
+    height: 1px;
+    position: relative;
+    top: .20em;
+    margin: 0 5px;
+}
+
+.fab::before{
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.fa-facebook-square::before{
+    content: "\f082";
 }
