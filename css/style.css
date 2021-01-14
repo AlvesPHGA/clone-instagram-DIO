@@ -178,10 +178,6 @@ a{
     content: "\f082";
 }
 
-.fa-instagram-square::before{
-    content: "\e055";
-}
-
 @media(min-width: 370px){
 
     footer{
