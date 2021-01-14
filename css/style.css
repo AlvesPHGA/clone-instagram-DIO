@@ -1,6 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 a{
@@ -11,22 +18,28 @@ a{
     display: none;
 }
 
-.grid-area-login-down{
-    margin: 0 auto;
+.grid-area-login-down{ 
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    row-gap: 8px;
 }
 
-.grid-area-login{
-    width: 100%;
-    padding: 30px 0;
+.grid-area-login{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
 }
 
 .grid-area-login img{ 
-    width: 60%;
+    width: 200px;
 }
 
 .grid-area-form form{
@@ -47,7 +60,7 @@ a{
 
 .grid-area-form form input[type="button"]{
     margin-top: 5px;
-    width: 260px;
+    width: 250px;
     background-color: #AFDCF9;
     border: none;
     border-radius: 5px;
@@ -84,6 +97,10 @@ a{
 }
 
 .grid-area-create-account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 10px 0;
 }
 
@@ -102,7 +119,7 @@ a{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 30px auto 20px;
+    margin: 20px auto 20px;
 }
 
 .grid-area-button a img{
@@ -127,9 +144,11 @@ a{
 }
 
 .trace-word{ 
-    margin: 50px 0;
+    margin: 30px auto 50px;
     display: flex;
     align-items: center;
+    
+    width: 300px;
 }
 
 .text-alone{
@@ -144,7 +163,7 @@ a{
     height: 1px;
     position: relative;
     top: .20em;
-    margin: 0 5px;
+    margin: 0 20px;
 }
 
 .fab::before{
@@ -157,4 +176,90 @@ a{
 
 .fa-facebook-square::before{
     content: "\f082";
+}
+
+.fa-instagram-square::before{
+    content: "\e055";
+}
+
+@media(min-width: 370px){
+
+    footer{
+        text-align: center;
+    }
+
+    .grid-link-footer{
+        width: 350px;
+        padding: 5px;
+    }
+}
+
+@media(min-width: 760px){
+
+    footer{
+        text-align: center;
+    }
+
+    .grid-area-login{
+        padding: 20px 0;
+        margin-top: 50px;
+        border: 1px solid #dbdbdb;
+    }
+
+    .grid-area-create-account{
+        border: 1px solid #dbdbdb;
+        padding: 5px 37px;
+    }
+
+    .grid-link-footer{
+        width: 550px;
+        padding: 20px 10px;
+    }
+}
+
+@media(min-width: 1000px){
+    .contents{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        padding: 20px 0;
+    }
+
+    .grid-smartphone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-smartphone img{
+        height: 580px;
+        width: 300px;
+    }
+
+    .grid-area-login-down{ 
+        height: 600px;
+
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .grid-area-login{
+        border: 1px solid #dbdbdb;
+        padding: 10px 12px;
+    }
+
+    .grid-area-create-account{
+        border: 1px solid #dbdbdb;
+        padding: 15px 36px;
+    }
+
+    .trace-word{
+        margin: 10px auto 10px;
+    }
+
+    .grid-area-form form{
+        padding-bottom: 0;
+    }
 }
